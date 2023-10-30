@@ -77,7 +77,7 @@ public class RegistroDeVotante {
 
             FileReader fr = new FileReader(archivo2);
             BufferedReader br = new BufferedReader(fr);
-
+            
             File archivoCopia2 = new File("archivo_texto_copia.txt");
             FileWriter fw = new FileWriter(archivoCopia2);
             BufferedWriter bw = new BufferedWriter(fw);
@@ -92,7 +92,6 @@ public class RegistroDeVotante {
 
                 //Solo algunos campos se pueden modificar 
                 if (datos[0].equals(cuiVotante)) {
-
                     System.out.println("Escriba la direccion de residencia ");
                     direccionVotante = teclado.nextLine();
                     datos[5] = direccionVotante;
@@ -104,7 +103,7 @@ public class RegistroDeVotante {
                     datos[7] = departamentoVotante;
                     System.out.println("Escriba el pais de Origen ");
                     paisVotante = teclado.nextLine();
-                    datos[8] = paisVotante;
+                    datos[8] = paisVotante; 
                     System.out.println("Ingrese el correo electronico ");
                     emailVotante = teclado.nextLine();
                     datos[9] = emailVotante;

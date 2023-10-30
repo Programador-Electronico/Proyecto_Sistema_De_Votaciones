@@ -120,15 +120,22 @@ public class Principal {
 
                                 //Modifica al votante
                                 case 2:
+                                    RegistroDeVotante modVotante = new RegistroDeVotante();
+                                    modVotante.ModificarVotante();
+                                    
 
                                     break;
 
                                 //Reinicio de Contraseña del votante
                                 case 3:
+                                    RegistroDeVotante renPassVotante = new RegistroDeVotante();
+                                    renPassVotante.ReiniciarContrasena();
                                     break;
 
                                 //Registra el fallecimiento del Votante
                                 case 4:
+                                    RegistroDeVotante fallVotante = new RegistroDeVotante();
+                                    fallVotante.RegistrarFalllecimiento();
                                     break;
 
                                 //Regresa al menu principal
@@ -237,6 +244,7 @@ public class Principal {
                         System.out.println("Ingrese una opcion valida!");
                 }//llave final del primer swithc
             } while (opcion != 7);
+            
         } else {
             System.out.println("Contraseña incorrecta! ");
         }
